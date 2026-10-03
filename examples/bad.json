@@ -1,0 +1,1 @@
+{"catalog":[{"id":"A","credits":1,"category":"x","prerequisites":["B"]},{"id":"B","credits":1,"category":"x","prerequisites":["A"]}],"rules":{"required":[],"category_minima":{},"total_min_credits":0},"students":[]}

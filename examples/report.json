@@ -1,0 +1,56 @@
+{
+  "students": [
+    {
+      "id": "S1",
+      "total_credits": 10,
+      "category_credits": {
+        "cs": 6,
+        "math": 4
+      },
+      "missing_required": [],
+      "category_gaps": {
+        "cs": 0,
+        "math": 0
+      },
+      "total_gap": 0,
+      "prereq_violations": [],
+      "graduation_eligible": true
+    },
+    {
+      "id": "S2",
+      "total_credits": 6,
+      "category_credits": {
+        "cs": 6
+      },
+      "missing_required": [],
+      "category_gaps": {
+        "cs": 0,
+        "math": 4
+      },
+      "total_gap": 4,
+      "prereq_violations": [
+        {
+          "course": "CS101",
+          "term": 1,
+          "missing": "CS100"
+        }
+      ],
+      "graduation_eligible": false
+    },
+    {
+      "id": "S3",
+      "total_credits": 0,
+      "category_credits": {},
+      "missing_required": [
+        "CS101"
+      ],
+      "category_gaps": {
+        "cs": 6,
+        "math": 4
+      },
+      "total_gap": 10,
+      "prereq_violations": [],
+      "graduation_eligible": false
+    }
+  ]
+}

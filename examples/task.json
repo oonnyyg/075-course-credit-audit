@@ -1,0 +1,24 @@
+{
+  "catalog": [
+    {"id": "CS100", "credits": 3, "category": "cs", "prerequisites": []},
+    {"id": "CS101", "credits": 3, "category": "cs", "prerequisites": ["CS100"]},
+    {"id": "MA100", "credits": 4, "category": "math", "prerequisites": []}
+  ],
+  "rules": {
+    "required": ["CS101"],
+    "category_minima": {"cs": 6, "math": 4},
+    "total_min_credits": 10
+  },
+  "students": [
+    {"id": "S1", "records": [
+      {"course": "CS100", "term": 1, "passed": true},
+      {"course": "CS101", "term": 2, "passed": true},
+      {"course": "MA100", "term": 2, "passed": true}
+    ]},
+    {"id": "S2", "records": [
+      {"course": "CS100", "term": 1, "passed": true},
+      {"course": "CS101", "term": 1, "passed": true}
+    ]},
+    {"id": "S3", "records": []}
+  ]
+}
