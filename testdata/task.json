@@ -1,0 +1,30 @@
+{
+  "courses": [
+    {"id": "CS101", "credits": 3, "category": "cs", "prerequisites": []},
+    {"id": "CS201", "credits": 3, "category": "cs", "prerequisites": ["CS101"]},
+    {"id": "MA101", "credits": 4, "category": "math", "prerequisites": []}
+  ],
+  "requirements": {
+    "required": ["CS101", "CS201"],
+    "categoryMin": {"cs": 6, "math": 4},
+    "totalMin": 10
+  },
+  "students": [
+    {
+      "id": "S001",
+      "records": [
+        {"course": "CS101", "term": 1, "passed": true},
+        {"course": "CS201", "term": 2, "passed": true},
+        {"course": "MA101", "term": 1, "passed": true}
+      ]
+    },
+    {
+      "id": "S002",
+      "records": [
+        {"course": "CS101", "term": 1, "passed": false},
+        {"course": "CS201", "term": 1, "passed": true},
+        {"course": "CS101", "term": 2, "passed": true}
+      ]
+    }
+  ]
+}
